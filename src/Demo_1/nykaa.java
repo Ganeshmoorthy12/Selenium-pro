@@ -57,11 +57,14 @@ public class nykaa {
 		System.out.println("enter the otp");
 		String n = sug.next();
 		driver.findElement(By.name("otpValue")).sendKeys(n);
+		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='css-n7wnfc e8tshxd0']")).click();//address
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//p[text()='Cash on delivery']")).click();//cod
+		
+		//https://github.com/Ganeshmoorthy12/Adatin.git
 
 	}
 
